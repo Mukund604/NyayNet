@@ -1,0 +1,194 @@
+[
+  {
+    "username": "travel_fan",
+    "text": "Love this photo! Where was it taken?",
+    "post_id": "post_001",
+    "expected_hateful": false
+  },
+  {
+    "username": "foodie_99",
+    "text": "The sunset looks amazing! Great capture.",
+    "post_id": "post_001",
+    "expected_hateful": false
+  },
+  {
+    "username": "art_lover",
+    "text": "Beautiful composition, keep posting!",
+    "post_id": "post_002",
+    "expected_hateful": false
+  },
+  {
+    "username": "music_buff",
+    "text": "This is so inspiring, thank you for sharing",
+    "post_id": "post_002",
+    "expected_hateful": false
+  },
+  {
+    "username": "reader_123",
+    "text": "Bahut accha hai ye! (This is very good!)",
+    "post_id": "post_003",
+    "expected_hateful": false
+  },
+  {
+    "username": "edge_case1",
+    "text": "You think you're so smart? Everyone can see through your fake posts",
+    "post_id": "post_001",
+    "expected_hateful": false,
+    "notes": "borderline - sarcastic but not abusive"
+  },
+  {
+    "username": "edge_case2",
+    "text": "This is the worst thing I've ever seen, just terrible content",
+    "post_id": "post_002",
+    "expected_hateful": false,
+    "notes": "borderline - negative but not harassment"
+  },
+  {
+    "username": "troll_42",
+    "text": "Lol nobody cares about your opinion, sit down",
+    "post_id": "post_003",
+    "expected_hateful": false,
+    "notes": "borderline - dismissive"
+  },
+  {
+    "username": "harasser_01",
+    "text": "You're disgusting, go kill yourself nobody wants you here",
+    "post_id": "post_001",
+    "expected_hateful": true,
+    "expected_labels": ["abuse", "threat"]
+  },
+  {
+    "username": "harasser_01",
+    "text": "I will find where you live and make you pay for this",
+    "post_id": "post_002",
+    "expected_hateful": true,
+    "expected_labels": ["threat"]
+  },
+  {
+    "username": "harasser_01",
+    "text": "You ugly piece of trash, delete your account",
+    "post_id": "post_003",
+    "expected_hateful": true,
+    "expected_labels": ["abuse"]
+  },
+  {
+    "username": "bully_55",
+    "text": "Send me pics or I'll leak your photos everywhere",
+    "post_id": "post_001",
+    "expected_hateful": true,
+    "expected_labels": ["sexual", "threat"]
+  },
+  {
+    "username": "bully_55",
+    "text": "I know your school, I'll tell everyone what you really are",
+    "post_id": "post_002",
+    "expected_hateful": true,
+    "expected_labels": ["threat", "doxxing"]
+  },
+  {
+    "username": "troll_hindi",
+    "text": "Tu ja mar, tere jaisi ko koi nahi chahta",
+    "post_id": "post_003",
+    "expected_hateful": true,
+    "expected_labels": ["abuse", "threat"],
+    "notes": "Hindi abusive"
+  },
+  {
+    "username": "troll_hindi",
+    "text": "Teri photos leak kar dunga, dekh lena",
+    "post_id": "post_001",
+    "expected_hateful": true,
+    "expected_labels": ["threat", "sexual"],
+    "notes": "Hindi threat"
+  },
+  {
+    "username": "abuser_mix",
+    "text": "You saali, tera number hai mere paas, ghar aa jaunga",
+    "post_id": "post_002",
+    "expected_hateful": true,
+    "expected_labels": ["abuse", "threat", "doxxing"],
+    "notes": "Hinglish mixed abuse with doxxing threat"
+  },
+  {
+    "username": "hater_77",
+    "text": "People like you don't deserve to exist, your community is a disease",
+    "post_id": "post_001",
+    "expected_hateful": true,
+    "expected_labels": ["hate_speech"]
+  },
+  {
+    "username": "hater_77",
+    "text": "Go back to where you came from, you don't belong here",
+    "post_id": "post_003",
+    "expected_hateful": true,
+    "expected_labels": ["hate_speech"]
+  },
+  {
+    "username": "doxxer_x",
+    "text": "I found your address, it's in Andheri right? Everyone should know where this person lives",
+    "post_id": "post_002",
+    "expected_hateful": true,
+    "expected_labels": ["doxxing"]
+  },
+  {
+    "username": "creep_99",
+    "text": "You look so hot, send nudes or I'll find them myself",
+    "post_id": "post_001",
+    "expected_hateful": true,
+    "expected_labels": ["sexual", "threat"]
+  },
+  {
+    "username": "creep_99",
+    "text": "I've been watching all your stories, I know your daily routine now",
+    "post_id": "post_003",
+    "expected_hateful": true,
+    "expected_labels": ["threat", "doxxing"]
+  },
+  {
+    "username": "positive_vibes",
+    "text": "You're so talented, never stop creating!",
+    "post_id": "post_001",
+    "expected_hateful": false
+  },
+  {
+    "username": "supporter_1",
+    "text": "Proud of you! Ignore the haters.",
+    "post_id": "post_002",
+    "expected_hateful": false
+  },
+  {
+    "username": "new_follower",
+    "text": "Just found your page, love the aesthetic!",
+    "post_id": "post_003",
+    "expected_hateful": false
+  },
+  {
+    "username": "leet_abuser",
+    "text": "ur such a b1tch, kys already no1 likes u",
+    "post_id": "post_001",
+    "expected_hateful": true,
+    "expected_labels": ["abuse", "threat"],
+    "notes": "Creative spelling / leet speak"
+  },
+  {
+    "username": "empty_user",
+    "text": "",
+    "post_id": "post_001",
+    "expected_hateful": false,
+    "notes": "Edge case: empty comment"
+  },
+  {
+    "username": "emoji_user",
+    "text": "🔥🔥🔥 amazing work!! 💯💯",
+    "post_id": "post_002",
+    "expected_hateful": false,
+    "notes": "Emoji-only positive"
+  },
+  {
+    "username": "long_text_user",
+    "text": "I just wanted to say that I think your content has really improved over the past few months and I appreciate the effort you put into each post. The lighting, composition, and editing are all top-notch. Keep up the great work and don't let the negative comments get to you. You have a real talent and I hope you continue sharing your art with the world. Looking forward to seeing more from you in the future!",
+    "post_id": "post_003",
+    "expected_hateful": false,
+    "notes": "Edge case: long positive comment"
+  }
+]

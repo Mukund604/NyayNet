@@ -1,0 +1,38 @@
+# Core
+click>=8.1
+pydantic>=2.0
+pydantic-settings>=2.0
+python-dotenv>=1.0
+structlog>=23.0
+
+# ML
+transformers>=4.30
+torch>=2.0
+sentencepiece>=0.1.99
+langdetect>=1.0.9
+indic-transliteration>=2.3
+emoji>=2.8
+
+# LLM
+anthropic>=0.25
+
+# Automation
+playwright>=1.40
+
+# Evidence
+reportlab>=4.0
+Pillow>=10.0
+
+# Storage
+cryptography>=41.0
+
+# Async
+apscheduler>=3.10
+httpx>=0.25
+aiosmtplib>=3.0
+
+# Test
+pytest>=7.4
+pytest-asyncio>=0.21
+pytest-cov>=4.1
+factory-boy>=3.3
