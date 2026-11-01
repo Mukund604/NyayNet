@@ -1,5 +1,7 @@
 # NyayNet
 
+<img src="assets/card.jpg" width="100%" alt="NyayNet pipeline: detect, score, decide, human review, compile evidence, file, track" />
+
 An AI agent that detects abusive and threatening Instagram comments in several languages, compiles the evidence, and files structured complaints on India's National Cyber Crime Reporting Portal. A person stays in control of what gets filed.
 
 ## Pipeline
